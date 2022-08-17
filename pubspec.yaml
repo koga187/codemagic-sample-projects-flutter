@@ -24,7 +24,7 @@ dependencies:
 
   design_system:
     git:
-      url: git@github.com:SuaMusica/design_system.git
+      url: https://github.com/SuaMusica/design_system.git
       ref: develop
   flutter:
     sdk: flutter
