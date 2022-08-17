@@ -44,13 +44,13 @@ workflows:
         script: |
           flutter test
         ignore_failure: true
-      - name: Build AAB with Flutter
-        script: |
-          flutter build appbundle --release --build-name=1.0.0 --build-number=$(($(google-play get-latest-build-number --package-name "$PACKAGE_NAME" --tracks="$GOOGLE_PLAY_TRACK") + 1))
-    artifacts:
-      - build/**/outputs/**/*.aab
-      - build/**/outputs/**/mapping.txt
-      - flutter_drive.log
+    #   - name: Build AAB with Flutter
+    #     script: |
+    #       flutter build appbundle --release --build-name=1.0.0 --build-number=$(($(google-play get-latest-build-number --package-name "$PACKAGE_NAME" --tracks="$GOOGLE_PLAY_TRACK") + 1))
+    # artifacts:
+    #   - build/**/outputs/**/*.aab
+    #   - build/**/outputs/**/mapping.txt
+    #   - flutter_drive.log
     publishing:
       # See the following link for details about email publishing - https://docs.codemagic.io/publishing-yaml/distribution/#email
       email:
