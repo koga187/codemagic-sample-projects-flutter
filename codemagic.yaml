@@ -10,8 +10,8 @@ workflows:
           # CM_KEYSTORE_PASSWORD <-- Put your keystore password here
           # CM_KEY_PASSWORD <-- Put your keystore alias password here
           # CM_KEY_ALIAS <-- Put your keystore alias username here
-        - google_play # <-- (Includes GCLOUD_SERVICE_ACCOUNT_CREDENTIALS - Put your google-services.json here)
-        - other
+        # - google_play # <-- (Includes GCLOUD_SERVICE_ACCOUNT_CREDENTIALS - Put your google-services.json here)
+        # - other
       vars:
         CM_KEYSTORE_PATH: /tmp/keystore.keystore
         PACKAGE_NAME: "io.codemagic.flutteryaml" # <-- Put your package name here
@@ -54,8 +54,8 @@ workflows:
       # See the following link for details about email publishing - https://docs.codemagic.io/publishing-yaml/distribution/#email
       email:
         recipients:
-          - user_1@example.com
-          - user_2@example.com
+          - brunokoga187@gmail.com
+          # - user_2@example.com
         notify:
           success: true # To not receive a notification when a build succeeds
           failure: false # To not receive a notification when a build fails
